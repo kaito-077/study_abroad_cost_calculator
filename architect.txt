@@ -1,0 +1,36 @@
+my_flask_project/
+│
+├── app/
+│   ├── __init__.py            # Flaskアプリケーションの初期化
+│   ├── routes/
+│   │   ├── __init__.py        # ルートの登録
+│   │   ├── estimate_cost.py   # 留学費用見積もりAPI
+│   │   ├── get_schools.py     # 語学学校リスト取得API
+│   │   ├── get_school_info.py # 学校情報取得API
+│   │   └── get_currency_rate.py # 為替レート取得API
+│   ├── services/
+│   │   ├── __init__.py        # サービス層の初期化
+│   │   ├── estimate_service.py # 留学費用計算のビジネスロジック
+│   │   ├── schools_service.py  # 語学学校リスト取得のビジネスロジック
+│   │   ├── school_info_service.py  # 学校情報取得のビジネスロジック
+│   │   ├── currency_service.py # 為替レート取得のビジネスロジック
+│   │   └── utils.py           # 共通で使うユーティリティ関数
+│   ├── models.py              # データベースモデル（必要に応じて）
+│   ├── config.py              # 設定ファイル
+│   └── templates/            # テンプレートファイル（必要に応じて）
+│
+├── tests/
+│   ├── __init__.py            # テスト用の初期化
+│   ├── test_estimate_cost.py  # 留学費用見積もりAPIのテスト
+│   ├── test_get_schools.py    # 語学学校リスト取得APIのテスト
+│   ├── test_get_school_info.py # 学校情報取得APIのテスト
+│   └── test_get_currency_rate.py # 為替レート取得APIのテスト
+│
+├── venv/                      # 仮想環境
+│   └── ...
+│
+├── .env                       # 環境変数ファイル
+├── .gitignore                 # Gitの無視設定
+├── requirements.txt           # 必要なパッケージのリスト
+├── run.py                     # アプリケーション起動スクリプト
+└── README.md                  # プロジェクトの説明
